@@ -31,7 +31,7 @@ section, img{
     border-radius: 50px 150px 50px 50px;
     text-align: center;
 }
-/***NAV*/
+/***NAV***/
 
 nav ul{
     list-style-type: none; /*täpp võtab ära */
@@ -117,4 +117,36 @@ section#kast6 {
     text-align: start;
     background-color: yellow;
     border-radius: 600px;
+}
+
+/**GRID**/
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+section {
+    border: 2px solid lightgray;
+    margin: 0;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+section#pildigalerii {
+    background-color: darkgoldenrod;
+    color: white;
+}
+
+#pildigalerii img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 5px;
+    padding: 0;
+    border: 2px solid white;
+    border-radius: 10px;
 }
