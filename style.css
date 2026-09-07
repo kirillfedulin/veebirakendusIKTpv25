@@ -1,0 +1,120 @@
+h1 {
+    font-size: x-large;
+    font-family: "Sans Serif Collection";
+    color: darkred; /*tektsi värv*/
+}
+
+header h1 {
+    padding: 5%;
+    font-variant: small-caps;
+}
+
+header{
+    background-color: indianred;
+    background-image: url('pilt.png');
+    background-repeat: repeat-x;
+    background-position: 10px 10px;
+
+}
+footer {
+    padding: 5%;
+    background-color: indianred;
+    font-variant: small-caps;
+    border-bottom: 2px dotted orange;
+}
+
+section, img{
+    border: 1px solid lightgray; /*soild, double, dashed, dotted*/
+    width: 25%;
+    margin: 5px;
+    padding: 1%;
+    border-radius: 50px 150px 50px 50px;
+    text-align: center;
+}
+/***NAV*/
+
+nav ul{
+    list-style-type: none; /*täpp võtab ära */
+    margin: 0;
+    padding: 0;
+    background-color: darkred;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+nav ul li{
+    float: left;
+}
+
+nav ul li a{
+    display: block;
+    color: yellow;
+    text-decoration: none; /*alljone on kustatud*/
+    padding: 5px 10px;%;
+    border-left: 2px solid lightgray;
+}
+
+nav ul li a:hover{
+    color: darkkhaki;
+}
+
+nav{
+    margin-left: 50px;
+}
+main{
+    margin-top: 50px;
+}
+
+section#kast1 {
+    text-align: center;
+    background-color: darkgoldenrod;
+    color: white;
+    background-size: initial;
+    background-repeat: no-repeat;
+}
+
+section#kast2 {
+    text-align: center;
+    background-color: darkgoldenrod;
+    color: white;
+    background-size: 90px;
+    background-repeat: no-repeat;
+    box-sizing: inherit;
+    border-radius: 67px 856px 75px 953px;
+}
+
+section#kast3 {
+    text-align: center;
+    background-color: darkkhaki;
+    color: white;
+    background-size: 90px;
+    font-variant: super;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 200px;
+}
+
+section#kast4 {
+    text-align: right;
+    background-color: darkkhaki;
+    box-sizing: inherit;
+    border-radius: 222px 222px;
+}
+
+section#kast5 {
+    text-align: revert;
+    background-color: darkorange;
+    border-bottom-right-radius: 222px 222px;
+
+}
+
+section#kast6 {
+    text-align: start;
+    background-color: yellow;
+    border-radius: 600px;
+}
