@@ -135,6 +135,7 @@ section {
     background-color: white;
     box-sizing: border-box;
 }
+/*pildid*/
 
 section#pildigalerii {
     background-color: darkgoldenrod;
@@ -149,5 +150,49 @@ section#pildigalerii {
     padding: 0;
     border: 2px solid white;
     border-radius: 10px;
+}
+
+#pildigalerii img:hover {
+    transform: scale(1.1);
+}
+
+/*video*/
+
+section#video {
+    background-color: darkkhaki;
+    color: white;
+}
+
+#video iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border: none;
+    border-radius: 10px;
+}
+/*kaart*/
+
+section#kaart {
+    background-color: darkorange;
+    color: white;
+}
+#kaart iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border: none;
+    border-radius: 10px;
+}
+/*musika*/
+section#muusika{
+    background-color: purple;
+    color: white;
+}
+
+#muusika iframe {
+    width: 100%;
+    height: 152px;
+    border: none;
+    border-radius: 12px;
 }
 
