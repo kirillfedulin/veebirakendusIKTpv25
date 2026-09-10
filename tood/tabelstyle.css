@@ -8,3 +8,24 @@ table {
 td{
     border: 1px solid black;
 }
+
+table#keeruline1 {
+    border: 1px solid red;
+    width: 10%;
+    height: 200px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+table#keeruline2 td{
+    border: 1px solid red;
+    width: 50%;
+    height: 50px;
+    vertical-align: top;
+    border-collapse: collapse;
+    background-color: lightgray;
+}
+
+.nimia {
+    background-color: red;
+}
