@@ -1,8 +1,17 @@
+#Lipud{
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
 #eesti {
     width: 333px;
     height: 210px;
     border: 1px solid lightcoral;
     border-spacing: 0; /*убирает разьемы между строчками*/
+    position: absolute;
+    top: 50px;
+    left: 50%;
 }
 
 /*pseudoelimendide kasutamine*/
