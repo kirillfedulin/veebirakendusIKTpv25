@@ -1,0 +1,17 @@
+#eesti {
+    width: 333px;
+    height: 210px;
+    border: 1px solid lightcoral;
+    border-spacing: 0; /*убирает разьемы между строчками*/
+}
+
+/*pseudoelimendide kasutamine*/
+#eesti tr:nth-child(1) { /*esimee riida*/
+    background-color: lightblue;
+}
+#eesti tr:nth-child(2) { /*teida riida*/
+    background-color: black;
+}
+#eesti tr:nth-child(3) { /*kolmas riida*/
+    background-color: white;
+}
