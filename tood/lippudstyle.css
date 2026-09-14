@@ -24,3 +24,135 @@
 #eesti tr:nth-child(3) { /*kolmas riida*/
     background-color: white;
 }
+#taani {
+    width: 333px;
+    height: 210px;
+    border: 1px solid lightblue;
+    border-spacing: 0; /*убирает разьемы между строчками*/
+    position: absolute;
+    top: 300px;
+    left: 50%;
+}
+
+#taani tr:nth-child(1) td:nth-child(1), /*esimene rida esieme lahter*/
+#taani tr:nth-child(3) td:nth-child(1) { /*kolmas rida esieme lahter*/
+    background-color: red;
+    width: 65px;
+}
+
+#taani tr:nth-child(2){
+    background-color: white;
+    width: 60px;
+}
+
+#taani tr:nth-child(1) td:nth-child(3), /*esimene rida kolmas lahter*/
+#taani tr:nth-child(3) td:nth-child(3) { /*kolmas rida kolmas lahter*/
+    background-color: red;
+    width: 195px;
+}
+
+#taani tr:nth-child(1) td:nth-child(2), /*esimene rida teine lahter*/
+#taani tr:nth-child(3) td:nth-child(2) { /*kolmas rida teine lahter*/
+    background-color: white;
+    width: 55px;
+}
+#taani td{
+    border: 0px solid white;
+}
+
+#france {
+    width: 333px;
+    height: 210px;
+    border: 1px solid lightblue;
+    border-spacing: 0;
+    position: absolute;
+    top: 550px;
+    left: 50%;
+}
+
+#france tr:nth-child(1) td:nth-child(1) {
+    background-color: blue;
+    width: 111px;
+}
+
+#france tr:nth-child(1) td:nth-child(2) {
+    background-color: white;
+    width: 111px;
+}
+
+#france tr:nth-child(1) td:nth-child(3) {
+    background-color: red;
+    width: 111px;
+}
+
+#france td {
+    border: 0px solid white;
+}
+
+
+
+
+#madagascar {
+    width: 333px;
+    height: 210px;
+    border: 1px solid lightgray ;
+    border-spacing: 0;
+    position: absolute;
+    top: 800px;
+    left: 50%;
+}
+
+#madagascar tr:nth-child(1) td:nth-child(1),
+#madagascar tr:nth-child(2) td:nth-child(1) {
+    background-color: white;
+    width: 111px;
+}
+
+#madagascar tr:nth-child(1) td:nth-child(2) {
+    background-color: red;
+    width: 222px;
+}
+
+#madagascar tr:nth-child(2) td:nth-child(1) {
+    background-color: green;
+    width: 222px;
+}
+
+#madagascar td {
+    border: 0px solid white;
+}
+
+
+#sveits{
+    width: 333px;
+    height: 210px;
+    border: 1px solid lightgray;
+    border-spacing: 0;
+    position: absolute;
+    top: 1050px;
+    left: 50%;
+}
+
+
+#sveits tr:nth-child(1) td:nth-child(1){
+    background-color: red;
+
+}
+
+#sveits tr:nth-child(1) td:nth-child(3){
+    background-color: red;
+}
+
+#sveits tr:nth-child(3) td:nth-child(1){
+    background-color: red;
+    width: 125px;
+}
+#sveits tr:nth-child(3) td:nth-child(3){
+    background-color: red;
+    width: 125px;
+
+}
+
+#sveits td {
+    border: 0px solid white;
+}
