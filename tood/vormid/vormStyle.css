@@ -1,0 +1,23 @@
+form {
+    text-align: left;
+    border-radius: 30px;
+}
+
+table, td{
+    border-collapse: collapse;
+    width: 40%;
+    padding: 1%;
+    border: 30px;
+    background-color: lightgrey;
+}
+
+input[type=text], input[type=date], input[type=color], input[type=email], input[type=password], input[type=file], input[type=button], input[type=checkbox] {
+    border: 1px solid lightsteelblue;
+    border-radius: 5px;
+    padding: 1%;
+    background-color: lightcyan;
+}
+
+label{
+    font-weight: bold;
+}
