@@ -1,0 +1,25 @@
+body {
+    background-color: lightcyan;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: saddlebrown;
+}
+
+h1 {
+    color: darkslateblue;
+    margin-top: 30px;
+}
+
+h2 {
+    color: lightskyblue;
+    font-size: 20px;
+}
+
+#arvuti1 {
+    width: 850px;
+    max-width: 90%;
+    border: 3px solid lightskyblue;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
+}
