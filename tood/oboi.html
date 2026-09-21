@@ -3,24 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>Map area</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<link rel="stylesheet" href="styles.css">
+
 <body>
-<h1>Map area kasutamine </h1>
+<h1>Map area kasutamine</h1>
 <h2>Tuleb klikida monitorid</h2>
-<img src="arvutipilt.jpg" alt="Arvutipilt" usemap="#arvuti" id="arvuti1">
+
+<img src="arvutipilt.jpg"
+     alt="Arvutipilt"
+     usemap="#arvuti"
+     id="arvuti1">
+
 <map name="arvuti">
-    <area shape="circle" coords="409, 202, 50" href="https://www.pexels.com/search/flowers/" alt="lilled">
-    <!-- circle coords=(x,y, R) -->
-    <area shape="rect" coords="580, 113, 715, 249" href="monitor.html" alt="monitor">
-    <!-- rect coords="x, y, x1, y2" -->
-    <area shape="poly" coords="198,488,328,445,416,461" href="probel.html" alt="probel">
 
-    <area shape="rect" coords="124,210,50" href="oboi.html" alt="frutiger">
+    <area shape="circle"
+          coords="409,202,50"
+          href="https://www.pexels.com/search/flowers/"
+          alt="lilled">
 
+    <!-- circle coords=(x,y,R) -->
+
+    <area shape="rect"
+          coords="580,113,715,249"
+          href="monitor.html"
+          alt="monitor">
+
+    <!-- rect coords="x,y,x1,y2" -->
+
+    <area shape="poly"
+          coords="198,488,328,445,416,461"
+          href="probel.html"
+          alt="probel">
+
+    <area shape="circle"
+          coords="124,210,50"
+          href="oboi.html"
+          alt="frutiger">
 
 </map>
-<h2>See on oboi!</h2>
 
+<h2>See on oboi!</h2>
 </body>
 </html>
