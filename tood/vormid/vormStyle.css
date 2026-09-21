@@ -11,13 +11,26 @@ table, td{
     background-color: lightgrey;
 }
 
-input[type=text], input[type=date], input[type=color], input[type=email], input[type=password], input[type=file], input[type=button], input[type=checkbox] {
+input[type=text], input[type=date], input[type=color], input[type=email], input[type=password], input[type=file], input[type=button], input[type=checkbox], input[type=radio] + label {
+    border: 1px solid lightsteelblue;
+    border-radius: 5px;
+    padding: 1%;
+    background-color: lightcyan;
+    font-weight: bold;
+
+}
+
+#stiil {
     border: 1px solid lightsteelblue;
     border-radius: 5px;
     padding: 1%;
     background-color: lightcyan;
 }
 
-label{
-    font-weight: bold;
+#stiil:hover {
+    background-color: lightgreen;
+}
+
+input[type=text]:hover, input[type=date]:hover, input[type=color]:hover, input[type=email]:hover, input[type=password]:hover, input[type=file]:hover, input[type=button]:hover, input[type=checkbox]:hover, input[type=radio]:hover + label:hover  {
+    background-color: lightgreen;
 }
