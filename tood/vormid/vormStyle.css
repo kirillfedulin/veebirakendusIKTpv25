@@ -7,7 +7,7 @@ table, td{
     border-collapse: collapse;
     width: 40%;
     padding: 1%;
-    border: 30px;
+    border: 1px gray solid;
     background-color: lightgrey;
 }
 
