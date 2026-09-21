@@ -7,30 +7,30 @@ table, td{
     border-collapse: collapse;
     width: 40%;
     padding: 1%;
-    border: 1px gray solid;
-    background-color: lightgrey;
+    border: 1px pink solid;
+    background: linear-gradient(135deg, #667eea, #764ba2);
 }
 
 input[type=text], input[type=date], input[type=color], input[type=email], input[type=password], input[type=file], input[type=button], input[type=checkbox], input[type=radio] + label {
     border: 1px solid lightsteelblue;
     border-radius: 5px;
     padding: 1%;
-    background-color: lightcyan;
+    background: linear-gradient(135deg, #a18cd1, #fbc2eb);
     font-weight: bold;
 
 }
 
 #stiil {
-    border: 1px solid lightsteelblue;
+    border: 1px solid lightgoldenrodyellow;
     border-radius: 5px;
     padding: 1%;
-    background-color: lightcyan;
+    background: linear-gradient(135deg, #a18cd1, #fbc2eb);
 }
 
 #stiil:hover {
-    background-color: lightgreen;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
 }
 
 input[type=text]:hover, input[type=date]:hover, input[type=color]:hover, input[type=email]:hover, input[type=password]:hover, input[type=file]:hover, input[type=button]:hover, input[type=checkbox]:hover, input[type=radio]:hover + label:hover  {
-    background-color: lightgreen;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
 }
