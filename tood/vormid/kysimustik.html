@@ -48,13 +48,13 @@
                 </strong>
             </td>
             <td>
-                <input type="radio" name="platvorm" id="spotify" value="spotify" onclick="radiovalik()">
+                <input type="radio" name="platvorm" id="spotify" value="Spotify" onclick="radiovalik()">
                 <label for="spotify">Spotify
                 </label>
-                <input type="radio" name="platvorm" id="applemusic" value="applemusic" onclick="radiovalik()">
+                <input type="radio" name="platvorm" id="applemusic" value="Apple Music" onclick="radiovalik()">
                 <label for="applemusic">Apple Music
                 </label>
-                <input type="radio" name="platvorm" id="soundcloud" value="soundcloud" onclick="radiovalik()">
+                <input type="radio" name="platvorm" id="soundcloud" value="SoundCloud" onclick="radiovalik()">
                 <label for="soundcloud">SoundCloud
                 </label>
                 <!-- "radio nupud uks valik mitmes -->
@@ -71,19 +71,22 @@
                 <!-- checkbox -->
                 <fieldset>
                     <legend>Tee oma valikud - lemmik grupp</legend>
-                    <input type="checkbox" name="lemmikud" id="limpbizkit">
+                    <input type="checkbox" name="lemmikud" id="limpbizkit" value="limpbizkit" onchange="checkboxValik()">
                     <label for="limpbizkit">Limp Bizkit</label>
                     <br>
-                    <input type="checkbox" name="lemmikud" id="linkinpark">
+                    <input type="checkbox" name="lemmikud" id="linkinpark" value="Linkin Park" onchange="checkboxValik()">
                     <label for="linkinpark">Linkin Park</label>
                     <br>
-                    <input type="checkbox" name="lemmikud" id="korn">
+                    <input type="checkbox" name="lemmikud" id="korn" value="Korn" onchange="checkboxValik()">
                     <label for="korn">Korn</label>
                     <br>
-                    <input type="checkbox" name="lemmikud" id="nirvana">
+                    <input type="checkbox" name="lemmikud" id="nirvana" value="Nirvana" onchange="checkboxValik()">
                     <label for="nirvana">Nirvana</label>
                     <br>
                 </fieldset>
+            </td>
+            <td>
+                <div id="vastus3"></div>
             </td>
         </tr>
     </table>
@@ -146,6 +149,17 @@
         </td>
         <td>
             <input type="file" id="myfile" name="myfile">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="reset" value="Puhasta" onclick="puhasta()">
+        </td>
+        <td>
+            <input type="button" value="Näita/Loe andmed" onclick="naitaKoike()">
+        </td>
+        <td>
+            <div id="vastusKoik"></div>
         </td>
     </tr>
 </table>
