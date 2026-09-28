@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>muusika küsimustik</title>
     <link rel="stylesheet" href="vormStyle.css">
+    <script src="../js/kysimustikScript.js"></script>
 </head>
 <body>
 <h1>Muusika küsimustik</h1>
@@ -16,7 +17,10 @@
                 <label for="nimi">Nimi:</label>
             </td>
             <td>
-                <input type="text" id="nimi" placeholder="Kirill">
+                <input type="text" id="nimi" placeholder="Kirill" oninput="nimiLugemineKastist()">
+            </td>
+            <td>
+                <div id="vastus1"></div>
             </td>
         </tr>
         <tr>
@@ -44,16 +48,19 @@
                 </strong>
             </td>
             <td>
-                <input type="radio" name="platvorm" id="spotify">
+                <input type="radio" name="platvorm" id="spotify" value="spotify" onclick="radiovalik()">
                 <label for="spotify">Spotify
                 </label>
-                <input type="radio" name="platvorm" id="applemusic">
+                <input type="radio" name="platvorm" id="applemusic" value="applemusic" onclick="radiovalik()">
                 <label for="applemusic">Apple Music
                 </label>
-                <input type="radio" name="platvorm" id="soundcloud">
+                <input type="radio" name="platvorm" id="soundcloud" value="soundcloud" onclick="radiovalik()">
                 <label for="soundcloud">SoundCloud
                 </label>
                 <!-- "radio nupud uks valik mitmes -->
+                <td>
+                    <div id="vastus2"></div>
+                </td>
             </td>
         </tr>
     </table>
