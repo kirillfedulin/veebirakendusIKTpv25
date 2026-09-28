@@ -127,6 +127,16 @@ function kuuladRaadio(){
     return valik3;
 }
 
+function raadioJaam(){
+    let vastus8 = document.getElementById("vastus8");
+    let raadiojaam = document.getElementById("raadiojaam");
+
+    vastus8.innerHTML="Sinu vastus: " + raadiojaam.value;
+    vastus8.style.background = "linear-gradient(135deg, #ff9a9e, #fad0c4)"
+
+    return raadiojaam.value;
+}
+
 //kasutab teisi funktsioone
 function naitaKoike(){
     let vastusKoik = document.getElementById("vastusKoik");
@@ -137,13 +147,15 @@ function naitaKoike(){
     let stiil = selectValik("stiil");
     let arvamus = arvamusLugemine("arvamus");
     let valik3 = kuuladRaadio();
+    let raadiojaam = raadioJaam();
 
     vastusKoik.innerHTML = "Sinu nimi on: " + nimi +
         "<br>" + "Sinu lemmikud on:" + valik2 +
         "<br>" + "Sa kasutad " + valik + "<br>" +
         "Sa kuuled " + tund + "tundi" +
     "<br>" + "Sa valisid " + stiil +
-        "<br>" + "Sa sisestatud " + arvamus + "<br>" + "Sa valik: " + valik3;
+        "<br>" + "Sa sisestatud " + arvamus + "<br>" + "Sa valik: " + valik3
+    + "<br>" + raadiojaam;
 
     vastusKoik.style.background = "linear-gradient(135deg, #ff9a9e, #fad0c4)";
 }
@@ -156,5 +168,6 @@ function puhasta(){
     vastus5.innerHTML="";
     vastus6.innerHTML="";
     vastus7.innerHTML="";
+    vastus8.innerHTML="";
     vastusKoik.innerHTML="";
 }
