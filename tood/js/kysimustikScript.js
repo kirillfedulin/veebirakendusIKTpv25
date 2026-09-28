@@ -3,7 +3,9 @@ function nimiLugemineKastist(){
     let nimi = document.getElementById("nimi");
 
     vastus1.innerHTML="Sisestatud nimi on: " + nimi.value;
-    vastus1.style.background = "linear-gradient(135deg, #ff9a9e, #fad0c4)";
+    vastus1.style.background = "linear-gradient(135deg, #ff9a9e, #fad0c4)"
+
+    return nimi.value;
 }
 //radio valikud
 
@@ -29,6 +31,8 @@ function radiovalik(){
 
     vastus2.innerHTML="valik: " + valik;
     vastus2.style.background = "linear-gradient(135deg, #ff9a9e, #fad0c4)";
+
+    return valik;
 }
 
 //checkbox valik
@@ -58,4 +62,25 @@ function checkboxValik(){
 
     vastus3.innerHTML="Sinu lemmikud on: " + valik2;
     vastus3.style.background = "linear-gradient(135deg, #ff9a9e, #fad0c4)";
+
+    return valik2;
+}
+
+//kasutab teisi funktsioone
+function naitaKoike(){
+    let vastusKoik = document.getElementById("vastusKoik");
+    let nimi = nimiLugemineKastist();
+    let valik = radiovalik();
+    let valik2 = checkboxValik();
+
+    vastusKoik.innerHTML = "Sinu nimi on: " + nimi +
+        "<br>" + "Sinu lemmikud on:" + valik2 +
+        "<br>" + "Sa kasutad " + valik;
+}
+function puhasta(){
+    vastus1.innerHTML="";
+    vastus2.innerHTML="";
+    vastus3.innerHTML="";
+    vastusKoik.innerHTML="";
+
 }
