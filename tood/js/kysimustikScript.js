@@ -110,7 +110,6 @@ function naitaKoike(){
     "<br>" + "Sa valisid " + stiil;
 
     vastusKoik.style.background = "linear-gradient(135deg, #ff9a9e, #fad0c4)";
-
 }
 
 function puhasta(){
