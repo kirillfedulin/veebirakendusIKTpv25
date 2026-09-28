@@ -66,21 +66,58 @@ function checkboxValik(){
     return valik2;
 }
 
+function rangeValik(){
+    let vastus4 = document.getElementById("vastus4");
+    let tund = document.getElementById("tund");
+
+    vastus4.innerHTML="Sa kuuled muusikat: " + tund.value + "tundi";
+
+    vastus4.style.background = "linear-gradient(135deg, #ff9a9e, #fad0c4)";
+
+    return tund.value
+}
+
+//select valik
+
+function selectValik(){
+    let vastus5 = document.getElementById("vastus5");
+    let stiil = document.getElementById("stiil");
+
+    if(stiil.selectedIndex !== 0){ //0-1 esimene loetelus
+        vastus5.innerHTML="Sa valisid " + stiil.value;
+    }
+    else{
+        vastus5.innerHTML="Palun tee oma valik";
+    }
+
+    vastus5.style.background = "linear-gradient(135deg, #ff9a9e, #fad0c4)";
+
+    return stiil.value;
+}
+
 //kasutab teisi funktsioone
 function naitaKoike(){
     let vastusKoik = document.getElementById("vastusKoik");
     let nimi = nimiLugemineKastist();
     let valik = radiovalik();
     let valik2 = checkboxValik();
+    let tund = rangeValik();
+    let stiil = selectValik("stiil");
 
     vastusKoik.innerHTML = "Sinu nimi on: " + nimi +
         "<br>" + "Sinu lemmikud on:" + valik2 +
-        "<br>" + "Sa kasutad " + valik;
+        "<br>" + "Sa kasutad " + valik + "<br>" + "Sa kuuled " + tund + "tundi" +
+    "<br>" + "Sa valisid " + stiil;
+
+    vastusKoik.style.background = "linear-gradient(135deg, #ff9a9e, #fad0c4)";
+
 }
+
 function puhasta(){
     vastus1.innerHTML="";
     vastus2.innerHTML="";
     vastus3.innerHTML="";
+    vastus4.innerHTML="";
+    vastus5.innerHTML="";
     vastusKoik.innerHTML="";
-
 }

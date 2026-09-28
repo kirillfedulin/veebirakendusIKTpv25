@@ -28,7 +28,7 @@
                 <label for="stiil">Vali meeldivaim muusikastiil:</label>
             </td>
             <td>
-                <select name="stiil" id="stiil">
+                <select name="stiil" id="stiil" onchange="selectValik()">
                 <option value="vali">vali...</option>
                 <option value="hiphop">HipHop</option>
                 <option value="jazz">Jazz</option>
@@ -36,6 +36,9 @@
                 <option value="metal">Metal</option>
                 <option value="rap">Rap</option>
             </select>
+            </td>
+            <td>
+                <div id="vastus5"></div>
             </td>
         </tr>
     </table>
@@ -100,7 +103,10 @@
             </label>
         </td>
         <td>
-            0<input type="range" id="tund" min="o" max="24" value="step">24
+            0<input type="range" id="tund" min="o" max="24" onchange="rangeValik()">24
+        </td>
+        <td>
+            <div id="vastus4"></div>
         </td>
     </tr>
     <tr>
