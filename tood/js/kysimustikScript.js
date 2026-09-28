@@ -95,6 +95,38 @@ function selectValik(){
     return stiil.value;
 }
 
+function arvamusLugemine(){
+    let vastus6 = document.getElementById("vastus6");
+    let arvamus = document.getElementById("arvamus");
+
+    vastus6.innerHTML="Teie arvamus: " + arvamus.value;
+    vastus6.style.background = "linear-gradient(135deg, #ff9a9e, #fad0c4)"
+
+    return arvamus.value;
+}
+
+function kuuladRaadio(){
+    let vastus7 = document.getElementById("vastus7");
+    let jah = document.getElementById("jah");
+    let ei = document.getElementById("ei");
+
+    let valik3="";
+    if(jah.checked){
+        valik3=jah.value;
+    }
+    else if(ei.checked){
+        valik3=ei.value;
+    }
+    else{
+        valik3="Palun tee oma valik"
+    }
+
+    vastus7.innerHTML="Sa valikud: " + valik3;
+    vastus7.style.background = "linear-gradient(135deg, #ff9a9e, #fad0c4)";
+
+    return valik3;
+}
+
 //kasutab teisi funktsioone
 function naitaKoike(){
     let vastusKoik = document.getElementById("vastusKoik");
@@ -103,11 +135,15 @@ function naitaKoike(){
     let valik2 = checkboxValik();
     let tund = rangeValik();
     let stiil = selectValik("stiil");
+    let arvamus = arvamusLugemine("arvamus");
+    let valik3 = kuuladRaadio();
 
     vastusKoik.innerHTML = "Sinu nimi on: " + nimi +
         "<br>" + "Sinu lemmikud on:" + valik2 +
-        "<br>" + "Sa kasutad " + valik + "<br>" + "Sa kuuled " + tund + "tundi" +
-    "<br>" + "Sa valisid " + stiil;
+        "<br>" + "Sa kasutad " + valik + "<br>" +
+        "Sa kuuled " + tund + "tundi" +
+    "<br>" + "Sa valisid " + stiil +
+        "<br>" + "Sa sisestatud " + arvamus + "<br>" + "Sa valik: " + valik3;
 
     vastusKoik.style.background = "linear-gradient(135deg, #ff9a9e, #fad0c4)";
 }
@@ -118,5 +154,7 @@ function puhasta(){
     vastus3.innerHTML="";
     vastus4.innerHTML="";
     vastus5.innerHTML="";
+    vastus6.innerHTML="";
+    vastus7.innerHTML="";
     vastusKoik.innerHTML="";
 }

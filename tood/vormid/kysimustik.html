@@ -157,6 +157,33 @@
             <input type="file" id="myfile" name="myfile">
         </td>
     </tr>
+    <tr>        <!-- Mida arvad muusika kuulamisest koolis? – textarea. -->
+        <td>
+            <label for="arvamus">Mida arvad muusika kuulamisest koolis?</label>
+        </td>
+        <td>
+            <textarea name="arvamus" id="arvamus" cols="30" rows="2" oninput="arvamusLugemine()"></textarea>
+        </td>
+        <td>
+            <div id="vastus6"></div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <legend>Kas sa kuulad raadiot?</legend>
+        </td>
+        <td>
+            <input type="radio" name="raadio" id="jah" value="Jah" onclick="kuuladRaadio()">
+            <label for="jah">Jah</label>
+            <br>
+            <input type="radio" name="raadio" id="ei" value="Ei" onclick="kuuladRaadio()">
+            <label for="ei">Ei</label>
+            <br>
+        </td>
+        <td>
+            <div id="vastus7"></div>
+        </td>
+    </tr>
     <tr>
         <td>
             <input type="reset" value="Puhasta" onclick="puhasta()">
