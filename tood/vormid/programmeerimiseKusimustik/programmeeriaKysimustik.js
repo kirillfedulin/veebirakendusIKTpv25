@@ -39,7 +39,7 @@ function rangeValik(){
     let vastus2 = document.getElementById("vastus2");
     let tund = document.getElementById("tund");
 
-    vastus2.innerHTML="tundi nädalas tegeled programmeerimisega: " + tund.value + "tund";
+    vastus2.innerHTML="tundi nädalas tegeled programmeerimisega: " + tund.value + "tundi";
 
     return tund.value
 }
