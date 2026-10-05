@@ -32,7 +32,7 @@ function selectValik(){
 
 function radiovalik(){
     let piltValik = document.getElementsByName("piltValik"); //mitu elemendi ühe nimega
-    let valikudPilt = document.getElementById("valikudPilt");
+    let valitudPilt = document.getElementById("valitudPilt");
 
     for(let i=0;i<piltValik.length; i++) {
         if (piltValik[i].checked) {
