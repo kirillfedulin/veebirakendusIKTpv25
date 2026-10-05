@@ -23,7 +23,6 @@ function checkboxValik(){
     }
 
     vastus7.innerHTML="Sinu lemmikud on: " + valik;
-    vastus7.style.background = "linear-gradient(lightcyan, lightblue);";
     return valik;
 }
 
@@ -31,8 +30,7 @@ function oppimisestKastist(){
     let vastus1 = document.getElementById("vastus1");
     let oppimisest = document.getElementById("oppimisest");
 
-    vastus1.innerHTML="Sisestatud nimi on: " + oppimisest.value;
-    vastus1.style.background = "linear-gradient(lightcyan, lightblue);"
+    vastus1.innerHTML="Sisestatud arvamus: " + oppimisest.value;
 
     return oppimisest.value;
 }
@@ -41,9 +39,7 @@ function rangeValik(){
     let vastus2 = document.getElementById("vastus2");
     let tund = document.getElementById("tund");
 
-    vastus2.innerHTML="Sa kuuled muusikat: " + tund.value + "tund";
-
-    vastus2.style.background = "linear-gradient(lightcyan, lightblue);";
+    vastus2.innerHTML="tundi nädalas tegeled programmeerimisega: " + tund.value + "tund";
 
     return tund.value
 }
@@ -65,7 +61,77 @@ function radiovalik(){
         valik3="Palun tee oma valik"
     }
 
-    vastus3.style.background = "linear-gradient(lightcyan, lightblue);";
-
     return valik3;
+}
+
+function tooriistuKastist(){
+    let vastus4 = document.getElementById("vastus4");
+    let tooriistu = document.getElementById("tooriistu");
+
+    vastus4.innerHTML="Sisestatud oksad nimeta: " + tooriistu.value;
+
+    return tooriistu.value;
+}
+
+function radiovalik2(){
+    let vastus5 = document.getElementById("vastus5");
+    let csharpkeel = document.getElementById("csharpkeel");
+    let pythonkeel = document.getElementById("pythonkeel");
+    let cplus2keel = document.getElementById("cplus2keel");
+    let javakeel = document.getElementById("javakeel");
+    let javascript = document.getElementById("javascript");
+    let rust = document.getElementById("rust");
+
+    if(csharpkeel.checked){
+        valik4=csharpkeel.value;
+    }
+    else if(pythonkeel.checked){
+        valik4=pythonkeel.value;
+    }
+    else if(cplus2keel.checked){
+        valik4=cplus2keel.value;
+    }
+    else if(javakeel.checked){
+        valik4=javakeel.value;
+    }
+    else if(javascript.checked){
+        valik4=javascript.value;
+    }
+    else if(rust.checked){
+        valik4=rust.value;
+    }
+    else{
+        valik4="Palun tee oma valik"
+    }
+
+    vastus5.innerHTML="Sa valitsid: " + valik4;
+
+    return valik4;
+}
+
+function naitaKoike(){
+    let vastusKoik = document.getElementById("vastusKoik");
+    let valik = checkboxValik()
+    let oppimisest = oppimisestKastist()
+    let tund = rangeValik()
+    let valik3 = radiovalik()
+    let tooriistu = tooriistuKastist()
+    let valik4 = radiovalik2()
+
+
+    vastusKoik.innerHTML = "Sinu lemmikud on: " + valik +
+        "<br>" + "Sisestatud arvamus: " + oppimisest +
+        "<br>" + "tundi nädalas tegeled programmeerimisega: " + tund + "<br>" +
+        "Kas meeldi või ei meeldi: " + valik3 +
+        "<br>" + "Sisestatud oksad nimeta: " + tooriistu + "<br>" + "Sa valitsid: " + valik4;
+}
+
+function puhasta() {
+    vastus7.innerHTML="";
+    vastusKoik.innerHTML="";
+    vastus1.innerHTML="";
+    vastus2.innerHTML="";
+    vastus3.innerHTML="";
+    vastus4.innerHTML="";
+    vastus5.innerHTML="";
 }
