@@ -3,3 +3,9 @@ img#randomPilt{
     border-radius: 50%;
     width: 600px;
 }
+
+input[type=button]{
+    border: 2px solid lightcoral;
+    padding: 5px;
+    background-color: lightgreen;
+}
