@@ -1,0 +1,25 @@
+form {
+    text-align: left;
+    border-radius: 30px;
+}
+
+table, td{
+    border-collapse: collapse;
+    width: 40%;
+    padding: 1%;
+    border: 1px pink solid;
+    background: linear-gradient(lightcoral, lightpink);
+}
+
+input[type=text], input[type=date], input[type=color], input[type=email], input[type=password], input[type=file], input[type=button], input[type=checkbox], input[type=radio] + label {
+    border: 1px solid lightsteelblue;
+    border-radius: 5px;
+    padding: 1%;
+    background: linear-gradient(lightcyan, lightblue);
+    font-weight: bold;
+
+}
+
+input[type=text]:hover, input[type=date]:hover, input[type=color]:hover, input[type=email]:hover, input[type=password]:hover, input[type=file]:hover, input[type=button]:hover, input[type=checkbox]:hover, input[type=radio]:hover + label:hover  {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+}

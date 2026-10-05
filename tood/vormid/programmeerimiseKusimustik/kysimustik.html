@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Programmeerimise küsimustik</title>
+    <link rel="stylesheet" href="vormStyle.css">
+    <script src="programmeeriaKysimustik.js"></script>
+
+</head>
+<h1>Programmeerimise küsimustik</h1>
+<body>
+<table border="1">
+  <tr>
+    <td colspan="2">
+      <!-- checkbox -->
+      <fieldset>
+        <legend>Milliseid programmeerimiskeeli sa tead?</legend>
+        <input type="checkbox" name="tead" id="csharp" value="C#" onchange="checkboxValik()">
+        <label for="csharp">C#</label>
+        <br>
+        <input type="checkbox" name="tead" id="python" value="Python" onchange="checkboxValik()">
+        <label for="python">Python</label>
+        <br>
+        <input type="checkbox" name="tead" id="cplus2" value="c++" onchange="checkboxValik()">
+        <label for="cplus2">C++</label>
+        <br>
+        <input type="checkbox" name="tead" id="java" value="Java" onchange="checkboxValik()">
+        <label for="java">Java</label>
+        <br>
+      </fieldset>
+      <td>
+    <div id="vastus7"></div>
+  </td>
+    </td>
+
+<table border="1">
+  <tr>
+    <td>    <!-- Tekstkast -->
+      <label for="oppimisest">Mida arvad programmeerimise õppimisest? </label>
+    </td>
+    <td>
+      <input type="text" id="oppimisest" placeholder="Ma arvan et..." oninput="oppimisestKastist()">
+    </td>
+    <td>
+      <div id="vastus1"></div>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <label for="tund">
+        Mitu tundi päevast sa kuulad muusikat?
+      </label>
+    </td>
+    <td>
+      0<input type="range" id="tund" min="o" max="24" onchange="rangeValik()">24
+    </td>
+    <td>
+      <div id="vastus2"></div>
+    </td>
+  </tr>
+
+  <table border="1">
+    <tr>
+      <td>
+        <strong>
+          Kas sulle meeldib programmeerida?
+        </strong>
+      </td>
+      <td>
+        <input type="radio" name="vastus" id="jah" value="Jah" onclick="radiovalik()">
+        <label for="jah">Jah
+        </label>
+        <input type="radio" name="vastus" id="ei" value="Ei" onclick="radiovalik()">
+        <label for="ei">Ei
+        </label>
+      <td>
+        <div id="vastus3"></div>
+      </td>
+      </td>
+    </tr>
+  </table>
+
+  <table border="1">
+    <tr>
+      <td>
+        <label for="tooriistu">Milliseid programmeerimisega seotud tööriistu oskad nimetada? </label>
+      </td>
+      <td>
+        <input type="text" id="tooriistu" placeholder="Ma tean..." oninput="tooriistuKastist()">
+      </td>
+      <td>
+        <div id="vastus4"></div>
+      </td>
+    </tr>
+
+    <table border="1">
+      <tr>
+        <td>
+          <strong>
+            Millist programmeerimiskeelt sooviksid kõige rohkem õppida?
+          </strong>
+        </td>
+        <td>
+          <input type="radio" name="keel" id="c#keel" value="C#" onclick="radiovalik2()">
+          <label for="c#keel">C#
+          </label>
+          <br>
+          <input type="radio" name="keel" id="pythonkeel" value="Python" onclick="radiovalik2()">
+          <label for="pythonkeel">Python
+          </label>
+          <br>
+          <input type="radio" name="keel" id="c++keel" value="C++" onclick="radiovalik2()">
+          <label for="c++keel">C++
+          </label>
+          <br>
+          <input type="radio" name="keel" id="javakeel" value="Java" onclick="radiovalik2()">
+          <label for="javakeel">Java
+          </label>
+          <br>
+          <input type="radio" name="keel" id="javascript" value="JavaScript" onclick="radiovalik2()">
+          <label for="javascript">JavaScript
+          </label>
+          <br>
+          <input type="radio" name="keel" id="rust" value="Rust" onclick="radiovalik2()">
+          <label for="rust">Rust
+          </label>
+        <td>
+          <div id="vastus5"></div>
+        </td>
+        </td>
+      </tr>
+    </table>
+
+    <tr>
+      <td>
+        <input type="reset" value="Puhasta" onclick="puhasta()">
+      </td>
+      <td>
+        <input type="button" value="Näita/Loe andmed" onclick="naitaKoike()">
+      </td>
+      <td>
+        <div id="vastusKoik"></div>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
