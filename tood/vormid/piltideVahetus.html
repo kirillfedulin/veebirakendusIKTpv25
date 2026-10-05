@@ -10,7 +10,10 @@
 <img src="lill.png" alt="" id="randomPilt">
 <input type="button" onclick="juhuslikPilt()" value="Vaheta Pilt" id="pilt">
 
-<h2>Mõistatus. Arva ära mida näed pildil?</h2>
+<section id="mystatus">
+    <h2>Mõistatus. Arva ära mida näed pildil?</h2>
+</section>
+
 <label for="valik">Tee oma valik: </label>
 <select name="valik" id="valik" onchange="selectValik()">
     <option value="vali...">vali</option>
@@ -19,6 +22,24 @@
     <option value="netural.png">Netural</option>
     <option value="lill.png">Lill</option>
 </select>
+
+<section id="valik2">
+    <h2>Pildi kuvamiseks tee oma valiku: </h2>
+    <input type="radio" name="piltValik" id="v1" value="smile.png" onclick="radiovalik()">
+    <label for="v1">Smile pilt</label>
+    <br>
+    <input type="radio" name="piltValik" id="v2" value="kurb.png" onclick="radiovalik()">
+    <label for="v2">Kurb pilt</label>
+    <br>
+    <input type="radio" name="piltValik" id="v3" value="netural.png" onclick="radiovalik()">
+    <label for="v3">Netural pilt</label>
+    <br>
+    <input type="radio" name="piltValik" id="v4" value="lill.png" onclick="radiovalik()">
+    <label for="v4">Lill pilt</label>
+    <br>
+    <img src="" alt="" id="valitudPilt">
+</section>
+
 <div id="vastus">Siia tuleb vastus</div>
 </body>
 </html>
