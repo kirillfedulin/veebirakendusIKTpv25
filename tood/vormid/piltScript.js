@@ -14,3 +14,18 @@ function juhuslikPilt() {
 
     randomPilt.src = pilt;
 }
+
+function selectValik(){
+    let vastus = document.getElementById('vastus');
+    let valik = document.getElementById('valik');
+    let randomPilt = document.getElementById('randomPilt');
+
+    if(randomPilt.getAttribute('src')==valik.value){
+        vastus.innerHTML="ÕIGE!";
+        vastus.style.color = 'green';
+    }
+    else{
+        vastus.innerHTML="VALE!";
+        vastus.style.color = 'red';
+    }
+}

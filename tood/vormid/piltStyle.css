@@ -9,3 +9,26 @@ input[type=button]{
     padding: 5px;
     background-color: lightgreen;
 }
+
+#valik {
+    border: 2px solid lightcoral;
+    padding: 5px;
+    background-color: lightgreen;
+}
+
+div {
+    border: 2px solid lightpink;
+    border-radius: 5px;
+    width: 600px;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+#valik:hover {
+    background-color: lightpink;
+}
+
+input[type=button]:hover{
+    background-color: lightpink;
+}
