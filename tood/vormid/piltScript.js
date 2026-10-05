@@ -34,11 +34,10 @@ function radiovalik(){
     let piltValik = document.getElementsByName("piltValik"); //mitu elemendi ühe nimega
     let valikudPilt = document.getElementById("valikudPilt");
 
-    for(let i=0;i<piltValik.length; i++){
-        if(piltValik[i].checked){
-            valitudPilt.src=piltValik[i].value;
-        } else [
-            alert("tee oma valiku: ")
-        ]
+    for(let i=0;i<piltValik.length; i++) {
+        if (piltValik[i].checked) {
+            valitudPilt.src = piltValik[i].value;
+            break;
+        }
     }
 }
