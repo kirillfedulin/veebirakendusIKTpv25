@@ -14,22 +14,24 @@ function radiovalik(){
     let spotify = document.getElementById("spotify");
     let applemusic = document.getElementById("applemusic");
     let soundcloud = document.getElementById("soundcloud");
+    let valitudPilt = document.getElementById("valitudPilt");
 
-    let valik="";
     if(spotify.checked){
         valik=spotify.value;
+        valitudPilt.src="spotify.jpg";
     }
     else if(applemusic.checked){
         valik=applemusic.value;
+        valitudPilt.src="applemusic.jpg";
     }
     else if(soundcloud.checked){
         valik=soundcloud.value;
+        valitudPilt.src="soundcloud.jpg";
     }
     else{
         valik="Palun tee oma valik"
     }
 
-    vastus2.innerHTML="valik: " + valik;
     vastus2.style.background = "linear-gradient(135deg, #ff9a9e, #fad0c4)";
 
     return valik;
