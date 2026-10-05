@@ -1,4 +1,5 @@
-img #pilt{
-    border: 2px solid lightcoral;
+img#randomPilt{
+    border: 5px solid lightgreen;
     border-radius: 50%;
+    width: 600px;
 }
