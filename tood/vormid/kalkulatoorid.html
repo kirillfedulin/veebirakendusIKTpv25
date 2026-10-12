@@ -5,6 +5,7 @@
     <title>Kalkulaatorid</title>
     <link rel="stylesheet" href="kalkStyle.css">
     <script src="kalkScript1.js"></script>
+    <script src="kalkScript2.js"></script>
 </head>
 <body>
 <h1>Kalkulaatorid</h1>
@@ -29,8 +30,8 @@
     <h2>Joogi kalkulaator</h2>
     <label for="kogus"> Mitu tk soovid:</label>
     <input type="number" id="kogus" min="1" max="10" value="1">
-    <label for="joogiValik">Vali lemmik jooki:</label>
-    <select name="joogiValik" id="joogiValik">
+    <label for="joogiValik">Vali lemmikjooki:</label>
+    <select name="joogiValik" id="joogiValik" onchange="jookideValik()">
       <option value="1">CocaCola</option>
       <option value="2">RedBull</option>
       <option value="3">Lean</option>
