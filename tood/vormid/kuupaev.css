@@ -1,0 +1,90 @@
+
+/* Общие настройки */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e0f2fe, #ede9fe);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    color: #1e293b;
+}
+
+/* Заголовок */
+h1 {
+    font-size: 32px;
+    text-align: center;
+    color: #4338ca;
+    margin-bottom: 35px;
+}
+
+/* Кнопки */
+input[type="button"] {
+    width: 100%;
+    max-width: 380px;
+    padding: 15px 20px;
+    margin-top: 18px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 12px rgba(99, 102, 241, 0.2);
+    transition: 0.3s ease;
+}
+
+/* Эффект при наведении */
+input[type="button"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(99, 102, 241, 0.35);
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+}
+
+/* Эффект при нажатии */
+input[type="button"]:active {
+    transform: scale(0.98);
+}
+
+/* Блоки с результатами */
+#vastus,
+#vastus2,
+#vastus3 {
+    width: 100%;
+    max-width: 380px;
+    min-height: 55px;
+    margin-top: 12px;
+    padding: 16px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ddd6fe;
+    box-shadow: 0 4px 12px rgba(30, 41, 59, 0.06);
+    color: #334155;
+    font-size: 16px;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+/* Адаптация для телефонов */
+@media (max-width: 480px) {
+    body {
+        padding: 30px 16px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    input[type="button"] {
+        font-size: 14px;
+        padding: 14px;
+    }
+}
