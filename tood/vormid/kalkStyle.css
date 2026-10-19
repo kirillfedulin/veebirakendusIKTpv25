@@ -1,22 +1,75 @@
-section#yld{
+div#yld {
     display: flex;
     flex-direction: row;
     gap: 10px;
 }
-section#kalk1{
-    border: 1pt solid grey;
+
+section#kalk1 {
+    border: 1pt solid #3b4a55;
     border-radius: 10px;
     width: 30%;
-    padding: 1%;
+    padding: 10px;
+    background: linear-gradient(to right, #000000, #d4e3ff 1px, #4b6b7e 110%);
 }
 
-section#kalk2{
-    border: 1pt solid grey;
+section#kalk2 {
+    border: 1pt solid #3b4a55;
     border-radius: 10px;
     width: 30%;
-    padding: 1px;
+    padding: 5px;
+    background: linear-gradient(to right, #000000, #d8d2bd 1px, #aca717 110%);
+}
+
+section#kalk3 {
+    border: 1pt solid #3b4a55;
+    border-radius: 10px;
+    width: 30%;
+    padding: 5px;
+    background: linear-gradient(to right, #000000, #d8d2bd 1px, #ac5517 110%);
 }
 
 img#vastusepilt{
+    height: 100px;
     width: 100px;
+    position: absolute;
+    top: 120px;
+    left: 300px;
+    border: 1pt solid #3b4a55;
+
+}
+
+img:not([src]), img[src=""] {
+    display: none;
+}
+
+section#kalk3 input[type="text"] {
+    width: 60px;
+    border: 1pt solid #3b4a55;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+div#vastus3 {
+    margin-top: 10px;
+    padding: 5px;
+    border: 1pt solid #3b4a55;
+    border-radius: 5px;
+    background: #fff;
+}
+
+img#vastusepilt3 {
+    height: 100px;
+    width: 100px;
+    margin-top: 10px;
+    border: 1pt solid #3b4a55;
+    border-radius: 5px;
+    display: block;
+    object-fit: cover;
+}
+
+p#kytusetekst {
+    border: 1pt dashed #3b4a55;
+    border-radius: 5px;
+    padding: 5px;
+    background: #fff;
 }

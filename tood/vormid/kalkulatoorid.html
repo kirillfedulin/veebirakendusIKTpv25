@@ -1,46 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Kalkulaatorid</title>
-    <link rel="stylesheet" href="kalkStyle.css">
-    <script src="kalkScript1.js"></script>
-    <script src="kalkScript2.js"></script>
+  <meta charset="UTF-8">
+  <title>Kalkulaatorid</title>
+  <link rel="stylesheet" href="kalkStyle.css">
+  <script src="kalkScript1.js"></script>
+  <script src="kalkScript2.js"></script>
+  <script src="kalkScript3.js"></script>
 </head>
 <body>
+
 <h1>Kalkulaatorid</h1>
-<section id="yld">
-  <!-- css paigutus flex row -->
+<div id="yld">
+  <!-- css paigus flex row -->
   <section id="kalk1">
     <h2>Meetri/tolli kalkulaator</h2>
-    <br>
-    <label for="arv"> Sisesta arv</label>
-    <input type="number" id="arv" min="1" max="100" value="1" onchange="teisendamine()">
+    <label for="arv">Sisesta arv: </label>
+    <input type="number" id="arv" min="1" max="100" step="1" value="1" onchange="teisendamine()">
     <br>
     <input type="radio" name="valik" id="meeter" value="meeter" onchange="teisendamine()">
     <label for="meeter">Meeter</label>
     <br>
     <input type="radio" name="valik" id="tolli" value="tolli" onchange="teisendamine()">
     <label for="tolli">Toll</label>
-    <br>
     <div id="vastus"></div>
-    <img src="" alt="" id="vastusepilt">
+    <img src="https://media.istockphoto.com/id/1344687455/vector/question-sing-flat-icon-vector-illustration-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=ZU6kq0hQacI7mZoYuXTqXF8KsgNnbCRaxDm_nAIdCAw=" alt="" id="vastusepilt">
+
   </section>
+
   <section id="kalk2">
     <h2>Joogi kalkulaator</h2>
-    <label for="kogus"> Mitu tk soovid:</label>
-    <input type="number" id="kogus" min="1" max="10" value="1">
-    <label for="joogiValik">Vali lemmikjooki:</label>
-    <select name="joogiValik" id="joogiValik" onchange="jookideValik()">
-      <option value="1">CocaCola</option>
-      <option value="2">RedBull</option>
-      <option value="3">Lean</option>
-      <option value="4">Jägermeister</option>
+
+    <label for="kogus">Mitu tk soovid: </label>
+    <input type="number" id="kogus" min="1" max="100" step="1" value="1">
+    <label for="joogivalik"> Vali lemmikjook: </label>
+    <select name="joogivalik" id="joogivalik" oninput="Jookidevalik()">
+      <option value="">vali</option>
+      <option value="kohv">Kohv</option>
+      <option value="vesi">Vesi</option>
+      <option value="coca">Coca-Cola</option>
+      <option value="fanta">Fanta</option>
     </select>
+    <br>
     <div id="vastus2"></div>
+
+
   </section>
-  <section id="kalk3"></section>
-</section>
+  <section id="kalk3">
+    <h2>Kütuse kalkulaator</h2>
+    <label for="liitrid">Mitu liitrit tankid: </label>
+    <input type="text" id="liitrid" value="10" oninput="kytuseArvutus()">
+    <br>
+    <input type="radio" name="kytusevalik" id="bensiin" value="bensiin" onchange="kytuseArvutus()">
+    <label for="bensiin">Bensiin 95</label>
+    <br>
+    <input type="radio" name="kytusevalik" id="diisel" value="diisel" onchange="kytuseArvutus()">
+    <label for="diisel">Diislikütus</label>
+    <br>
+    <input type="radio" name="kytusevalik" id="gaas" value="gaas" onchange="kytuseArvutus()">
+    <label for="gaas">Autogaas</label>
+    <div id="vastus3"></div>
+    <img src="" alt="" id="vastusepilt3">
+    <p id="kytusetekst"></p>
+  </section>
+</div>
 
 </body>
 </html>
