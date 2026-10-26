@@ -1,8 +1,8 @@
 // Loon objekt raamat, millel on vähemalt kolm omadust: pealkiri, autor, aasta.
 let raamat = {
-    pealkiri: "Garry Potter",
-    autor: "Joan Rowling",
-    aasta: 1982,
+    pealkiri: "Harry Potter ja tarkade kivi",
+    autor: "J. K. Rowling",
+    aasta: 1997,
 
     // Lisan meetod, mis kuvab raamatu kirjelduse.
     kirjeldus() {
@@ -17,18 +17,18 @@ let raamat = {
 };
 
 console.log(raamat.kirjeldus());
-raamat.muudaAastat(1925);
+raamat.muudaAastat(1998);
 
 
 // Loon objekt raamatukogu, mille omaduseks on raamatud (massiiv raamatutest).
 let raamatukogu = {
     raamatud: [
-        { pealkiri: "Kevade", autor: "Oskar Luts", aasta: 1912 },
-        { pealkiri: "Tõde ja õigus I", autor: "A. H. Tammsaare", aasta: 1926 },
-        { pealkiri: "Kuidas elad, Ann?", autor: "Aidi Vallik", aasta: 2001 },
-        { pealkiri: "Nullpunkt", autor: "Margus Karu", aasta: 2010 }
+        { pealkiri: "Sõrmuste isand", autor: "J. R. R. Tolkien", aasta: 1954 },
+        { pealkiri: "1984", autor: "George Orwell", aasta: 1949 },
+        { pealkiri: "Väike prints", autor: "Antoine de Saint-Exupéry", aasta: 1943 },
+        { pealkiri: "Da Vinci kood", autor: "Dan Brown", aasta: 2003 },
+        { pealkiri: "Nälgimismängud", autor: "Suzanne Collins", aasta: 2008 }
     ],
-
     // Lisa meetod, mis kuvab kõik raamatud kenasti.
     kuvaKõik() {
         let tulemus = "";
