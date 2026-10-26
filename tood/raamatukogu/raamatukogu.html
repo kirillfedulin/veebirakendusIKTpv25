@@ -9,28 +9,31 @@
 
 <h1>Raamat</h1>
 
-<input type="button" value="Raamatu kirjeldus" onclick="kuvaRaamat()">
+<input type="button" value="Raamatu kirjeldus" onclick="raamat.kirjeldus()">
 <br>
 <input type="number" id="uusAasta" placeholder="Uus aasta">
-<input type="button" value="Muuda aastat" onclick="muudaRaamatuAastat()">
+<input type="button" value="Muuda aastat" onclick="raamat.muudaAastat()">
 <div id="vastus0"></div>
 
 <h1>Raamatukogu funktsioonid</h1>
 
-<input type="button" value="Kuva kõik raamatud" onclick="kuvaKõikRaamatud()">
+<input type="button" value="Kuva kõik raamatud" onclick="raamatukogu.kuvaKõik()">
 <div id="vastus1"></div>
 <br>
 
-<input type="button" value="Raamatute koguarv" onclick="kuvaKoguarv()">
+<input type="button" value="Raamatute koguarv" onclick="raamatukogu.koguarv()">
 <div id="vastus2"></div>
 <br>
 
-<input type="button" value="Pärast 2000. aastat ilmunud" onclick="kuvaParast2000()">
+<input type="button" value="Pärast 2000. aastat ilmunud" onclick="raamatukogu.pärast2000()">
 <div id="vastus3"></div>
 <br>
 
-<input type="button" value="Kõige uuem raamat" onclick="kuvaUuem()">
+<input type="button" value="Kõige uuem raamat" onclick="raamatukogu.kõigeUuem()">
 <div id="vastus4"></div>
+<br>
+
+<input type="button" value="Kuva kõik tulemused" onclick="kuvaTulemused()">
 
 <h3>Lisa uus raamat</h3>
 <input type="text" id="pealkiri" placeholder="Pealkiri">
@@ -39,7 +42,7 @@
 <br>
 <input type="number" id="aasta" placeholder="Aasta">
 <br>
-<input type="button" value="Salvesta raamat" onclick="lisaRaamat()">
+<input type="button" value="Salvesta raamat" onclick="raamatukogu.lisaRaamat()">
 <div id="lisaTeade"></div>
 
 </body>
