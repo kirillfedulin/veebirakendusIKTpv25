@@ -67,7 +67,90 @@ function pilt() {
         const fail = new Image();
         fail.src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.fSSjHBHrJVIu3MChR8fn8AHaE7%3Fr%3D0%26pid%3DApi&f=1&ipt=b878433ae1596de03983458579623a90fb46e16919d407613615c66ba69a6fe8&ipo=images";
         fail.onload=()=>{
-            tx.drawImage(fail, 50, 50, 100, 100);
+            tx.drawImage(fail, 50, 50, 100, 100);   
         }
     }
+}
+
+//iseseisevtöö
+
+function ratas1() {
+    const canvas = document.getElementById('canvas'); //määrame canvas element
+    if(canvas.getContext){
+        let tx = canvas.getContext("2d")//2d tasand
+        tx.fillStyle = "black";
+        tx.beginPath();
+        tx.arc(110, 285, 35, 0, 2*Math.PI, true);
+        tx.fill();
+        tx.beginPath();
+        tx.arc(270, 285, 35, 0, 2*Math.PI, true);
+        tx.fill();
+    }
+}
+
+function ratas2() {
+    const canvas = document.getElementById('canvas'); //määrame canvas element
+    if(canvas.getContext){
+        let tx = canvas.getContext("2d")//2d tasand
+        tx.fillStyle = "gray";
+        tx.beginPath();
+        tx.arc(110, 285, 15, 0, 2*Math.PI, true);
+        tx.fill();
+        tx.beginPath();
+        tx.arc(270, 285, 15, 0, 2*Math.PI, true);
+        tx.fill();
+    }
+}
+
+function kere() {
+    const canvas = document.getElementById('canvas'); //määrame canvas element
+    if(canvas.getContext){
+        let tx = canvas.getContext("2d")//2d tasand
+        tx.fillStyle = "blue";
+        tx.fillRect(60, 190, 260, 80);
+        tx.fillStyle = "lightblue";
+        tx.fillRect(110, 130, 150, 60);
+    }
+}
+
+function tuled() {
+    const canvas = document.getElementById('canvas'); //määrame canvas element
+    if(canvas.getContext){
+        let tx = canvas.getContext("2d")//2d tasand
+        tx.strokeStyle = "yellow";
+        tx.lineWidth = 3;
+        tx.beginPath();
+        tx.moveTo(320, 205); //alguspunkt
+        tx.lineTo(390, 180); //lõpppunkt
+        tx.moveTo(320, 220);
+        tx.lineTo(395, 220);
+        tx.moveTo(320, 235);
+        tx.lineTo(390, 260);
+        tx.stroke();
+    }
+}
+
+function oma() {
+    const canvas = document.getElementById('canvas'); //määrame canvas element
+    if(canvas.getContext){
+        let tx = canvas.getContext("2d")//2d tasand
+        tx.fillStyle = "orange";
+        tx.beginPath();
+        tx.arc(60, 60, 30, 0, 2*Math.PI, true);
+        tx.fill();
+    }
+}
+
+function koik() {
+    puhasta()
+    joon()
+    kolmnurk()
+    ristkylik()
+    ring()
+    pilt()
+    ratas1()
+    ratas2()
+    kere()
+    tuled()
+    oma()
 }
