@@ -11,6 +11,7 @@
             integrity="sha256-mblSWfbYzaq/f+4akyMhE6XELCou4jbkgPv+JQPER2M="
             crossorigin="anonymous"></script>
     <script>
+
         $(document).ready(function(){
             $('#kuva').hide();
             //peida
@@ -27,10 +28,17 @@
 
             });
         });
+        function xyKoordinat(event, ui){
+            let koht = ui.offset;
+            $('#vastus').html('x: '+ koht.left + '//// y: ' + koht.top);
+        }
         function start(){
             $('#sisu').draggable();
             $('#pilt').draggable();
+            $('#sisu').on("drag", xyKoordinat);
+            $('#pilt').on("drag", xyKoordinat);
         }
+
     </script>
 </head>
 <body onload="start()">
@@ -58,6 +66,7 @@
     </section>
     <section>
         <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ff7.pmo.ee%2FnNv5xq49grLrhAy491kOqI_tAd0%3D%2F1442x0%2Ffilters%3Afocal(1990x1054%3A3151x3025)%2Fnginx%2Fo%2F2024%2F01%2F25%2F15849878t1h9458.jpg&f=1&nofb=1&ipt=445962213af619426495913834b9262da7f59bf2c5a3908399a912e8f5f8bcd8&ipo=images" alt="" id="pilt">
+        <div id="vastus"></div>
     </section>
 </main>
 </body>
