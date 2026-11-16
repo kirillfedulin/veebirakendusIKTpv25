@@ -10,3 +10,14 @@ h2{
     position: relative;
     left:0;
 }
+
+#paremale, #vasakule{
+    position: relative;
+    left:0;
+}
+
+img{
+    position: relative;
+    left: 0;
+    width: 200px;
+}
