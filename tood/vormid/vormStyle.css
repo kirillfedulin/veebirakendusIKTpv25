@@ -38,3 +38,7 @@ input[type=text]:hover, input[type=date]:hover, input[type=color]:hover, input[t
 img {
     width: 50px;
 }
+
+.viga {
+    color: red;
+}
