@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery kasutamine </title>
+    <link rel="stylesheet" href="queryStyle.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.min.js"
+            integrity="sha256-mblSWfbYzaq/f+4akyMhE6XELCou4jbkgPv+JQPER2M="
+            crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $('#kuva').hide();
+            //peida
+           $('#peida').click(function(){
+               $('#sisu').hide(500)
+               $(this).hide();
+               $('#kuva').show();
+           });
+            //kuva
+            $('#kuva').click(function() {
+                $('#sisu').show(500);
+                $(this).hide();
+                $('#peida').show();
+
+            });
+        });
+    </script>
+</head>
+<body>
+<header>
+    <h1>jQuery kasutamine</h1>
+</header>
+<main>
+    <input type="button" value="-->" id="paremale" onclick="$('#sisu, h2').animate({left: '500px'}, 1000);
+    $(this).hide();
+    $('#vasakule').show();">
+    <input type="button" value="<--" id="vasakule" style="display:none" onclick="$('#sisu, h2').animate({left: '0px'}, 1000);
+    $(this).hide();
+    $('#paremale').show();">
+
+    <input type="button" value="Peida" id="peida">
+    <input type="button" value="Kuva" id="kuva">
+    <section>
+        <h2>jQuery File upload</h2>
+        <div id="sisu">
+            With a variety of popular JavaScript tools, more than twenty websites, and millions of users all over the world,
+            there's always more to be done in the world of jQuery. From code and documentation to web design and support, the jQuery Foundation welcomes
+            contributions from anyone willing to put in the time and effort to help us and our community of users. Whether you're a grizzled open-source
+            veteran or a curious newcomer, if you want to get involved, use this site to find out how!
+        </div>
+    </section>
+</main>
+</body>
+</html>
