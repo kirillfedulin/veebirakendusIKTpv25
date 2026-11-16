@@ -6,8 +6,76 @@
     <meta charset="UTF-8">
     <title>Kirill veebirakenduste aluse tööd</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.min.js"
+            integrity="sha256-mblSWfbYzaq/f+4akyMhE6XELCou4jbkgPv+JQPER2M="
+            crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $('#kuvaPilt').hide();
+
+            // peida pilt
+            $('#peidaPilt').click(function(){
+                $('#pilt').hide(500);
+                $(this).hide();
+                $('#kuvaPilt').show();
+            });
+
+            // kuva pilt
+            $('#kuvaPilt').click(function(){
+                $('#pilt').show(500);
+                $(this).hide();
+                $('#peidaPilt').show();
+            });
+
+            // pilt paremale
+            $('#paremale').click(function(){
+                $('#pilt').animate({left: '500px'}, 1000);
+                $(this).hide();
+                $('#vasakule').show();
+            });
+
+            // pilt vasakule
+            $('#vasakule').click(function(){
+                $('#pilt').animate({left: '0px'}, 1000);
+                $(this).hide();
+                $('#paremale').show();
+            });
+
+            // peida / kuva tekst
+            $('#peidaTekst').click(function(){
+                $('#kast1').hide(500);
+                $(this).hide();
+                $('#kuvaTekst').show();
+            });
+            $('#kuvaTekst').click(function(){
+                $('#kast1').show(500);
+                $(this).hide();
+                $('#peidaTekst').show();
+            });
+
+            // uus: pildi stiili muutmine (toggleClass)
+            $('#stiil').click(function(){
+                $('#pilt').toggleClass('ramm');
+            });
+        });
+
+        function xyKoordinat(event, ui){
+            let koht = ui.offset;
+            $('#vastus').html('x: ' + koht.left + ' //// y: ' + koht.top);
+        }
+
+        function start(){
+            $('#kast1').draggable();
+            $('#pilt').draggable();
+            $('#kast1').on("drag", xyKoordinat);
+            $('#pilt').on("drag", xyKoordinat);
+        }
+    </script>
 </head>
-<body>
+<body onload="start()">
 <!--veebilehe sisu-->
 <!--päis-->
 <header>
@@ -47,12 +115,35 @@
             Palun vajuta teise lingi peale ning kontrolli et sisu on tändetud
         </p>
     </section>
+
+    <input type="button" value="Peida tekst" id="peidaTekst">
+    <input type="button" value="Kuva tekst" id="kuvaTekst" style="display:none">
+
     <section id="kast2">
         <h3>
             Põnev pilt
         </h3>
+
+        <input type="button" value="Peida pilt" id="peidaPilt">
+        <input type="button" value="Kuva pilt" id="kuvaPilt">
+        <input type="button" value="-->" id="paremale">
+        <input type="button" value="<--" id="vasakule" style="display:none">
+        <input type="button" value="Muuda pildi stiili" id="stiil">
+
         <div>
-            <img src="pilt.png" alt="see on ise tehtud pilt">
+            <img src="pilt.png" alt="see on ise tehtud pilt" id="pilt">
+        </div>
+        <div id="vastus"></div>
+    </section>
+    <section id="selgitus">
+        <h2>jQuery'ga on tethud:</h2>
+        <div>
+            Nupud "Peida pilt" ja "Kuva pilt" peidavad ja näitavad pilti sujuvalt
+            Nupud "-->"ja"<--" liigutavad pilti sujuvalt paremale ja taha
+            Pilti ja tekstiplokki saab hiirega lohistada
+            Lohistamise koordinaadid kuvatakse #vastus
+            Nupud "Peida tekst" ja "Kuva tekst" peidavad ja näitavad plokki "Tere tulemast!"
+            Nupp"Muuda pildi stiili"muudab pildi mustvalgeks
         </div>
     </section>
 </main>

@@ -11,7 +11,7 @@ h1 {
 }
 
 header h1 {
-    padding: 5%;
+    padding: 2%;
     font-variant: small-caps;
 }
 
@@ -23,7 +23,7 @@ header{
 
 }
 footer {
-    padding: 5%;
+    padding: 2%;
     background-color: indianred;
     font-variant: small-caps;
     border-bottom: 2px dotted orange;
@@ -72,7 +72,8 @@ nav{
     margin-left: 50px;
 }
 main{
-    margin-top: 50px;
+    margin-top: 10px;
+    gap: 10px;
 }
 
 section#kast1 {
@@ -200,5 +201,24 @@ section#muusika{
     height: 152px;
     border: none;
     border-radius: 12px;
+}
+
+/*koordinaadid*/
+#vastus {
+    color: black;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/*pilt liigub (animate ja draggable jaoks)*/
+#pilt {
+    position: relative;
+}
+
+/*uus stiil pildile (toggleClass)*/
+#pilt.ramm {
+    border: 5px solid darkred;
+    border-radius: 50%;
+    filter: grayscale(100%);
 }
 
